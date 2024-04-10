@@ -15,11 +15,6 @@
         android:theme="@style/Theme.GSBVisites"
         tools:targetApi="31">
         <activity
-            android:name=".InfosPraticien"
-            android:exported="false"
-            android:label="@string/title_activity_infos_praticien"
-            android:theme="@style/Theme.GSBVisites" />
-        <activity
             android:name=".ListPraticiensActivity"
             android:exported="false" />
         <activity
