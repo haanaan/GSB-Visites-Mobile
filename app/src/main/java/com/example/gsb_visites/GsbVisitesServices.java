@@ -13,8 +13,8 @@ public interface GsbVisitesServices {
     @POST("api/auth/login")
     Call<Visiteur> login(@Body Visiteur visiteur);
 
-    @GET("api/praticien")
-    Call<Praticiens> getPraticiens();
+    @GET("api/praticien/{praticienId}")
+    Call<Praticiens> getPraticiens(@Header("Authorization") String token, @Path("praticienId") String praticienId);
 
     @GET("api/visiteur/{visiteurId}")
     Call<Visiteur> getVisiteur(@Header("Authorization") String token, @Path("visiteurId") String visiteurId);
