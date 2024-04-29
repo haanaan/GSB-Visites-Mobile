@@ -19,4 +19,5 @@ public interface GsbVisitesServices {
     @GET("api/visiteur/{visiteurId}")
     Call<Visiteur> getVisiteur(@Header("Authorization") String token, @Path("visiteurId") String visiteurId);
 
+
 }

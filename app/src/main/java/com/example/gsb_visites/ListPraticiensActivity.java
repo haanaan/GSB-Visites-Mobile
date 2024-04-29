@@ -73,10 +73,9 @@ public class ListPraticiensActivity extends AppCompatActivity {
             @Override
             public void onClick(View view, int position) {
                 Praticiens praticien = praticiens.get(position);
-                /*Intent intent = new Intent(getApplicationContext(), PraticienActivity.class);
+                Intent intent = new Intent(getApplicationContext(), InfosPraticienActivity.class);
                 intent.putExtra("praticien", praticien);
-                startActivity(intent);*/
-                Toast.makeText(ListPraticiensActivity.this, "Praticien : " + praticien.getNom(), Toast.LENGTH_SHORT).show();
+                startActivity(intent);
             }
 
         }));
